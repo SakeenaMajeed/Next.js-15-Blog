@@ -22,8 +22,8 @@ export default function Hero() {
             alt="hero"
             src="/NFG-Deafult-Page-Image-1920x1080.jpg"
             layout="responsive"
-            width={20} // Lower value to make it smaller
-            height={3} // Aspect ratio for smaller size
+            width={20} 
+            height={3} 
             priority
           />
         </div>
@@ -34,19 +34,19 @@ export default function Hero() {
               Exploring Next.js 15
             </h1>
             <p className="text-lg md:text-2xl mb-6 text-gray-800">
-              {`   Next.js 15 is a game-changer in the world of web development,
+             Next.js 15 is a game-changer in the world of web development,
               offering cutting-edge performance enhancements that allow
               developers to build dynamic and efficient web applications.
               With the introduction of <strong>React Server Components</strong>,
-              the framework optimizes rendering by sending less JavaScript
+               {`   the framework optimizes rendering by sending less JavaScript
               to the client, thus enhancing loading speeds and improving
               user engagement. This feature is particularly beneficial for
               large applications, where server-side processing can
               significantly reduce the amount of data transmitted over the network.`}
             </p>
             <p className="text-lg md:text-2xl mb-6 text-gray-800">
-              {` Another major update in Next.js 15 is its enhanced
-              <strong> image optimization</strong>. The framework now supports
+           Another major update in Next.js 15 is its enhanced
+              <strong> image optimization</strong>.   {`  The framework now supports
               the latest image formats, ensuring that images are served in the
               most efficient manner possible. By automatically selecting the
               optimal format based on the user's browser, Next.js minimizes
@@ -106,7 +106,7 @@ export default function Hero() {
               </code>
             </div>
             <p className="text-lg md:text-2xl">
-       {  `     <strong>Note:</strong> The React Compiler is currently in an
+          <strong>Note:</strong>  {  ` The React Compiler is currently in an
               experimental phase, and its features and capabilities may evolve.
               It’s recommended that you stay updated with the latest
               developments and consider using it cautiously in your projects.`}
@@ -256,8 +256,8 @@ export default function Hero() {
               Improving the bundling of external libraries (stable)
             </h1>
             <p className="text-lg md:text-2xl mb-6">
-              {`   Integrating external libraries can enhance an app’s initial load performance. By default, the App Router bundles external libraries, but you can exclude particular libraries using the <code>serverExternalPackages</code> configuration option.
-                     `}{" "}
+              {`   Integrating external libraries can enhance an app’s initial load performance. By default, the App Router bundles external libraries, but you can exclude particular libraries using the`} <code>serverExternalPackages </code> configuration option.
+                    {" "}
             </p>
 
             <p className="text-lg md:text-2xl mb-6">
@@ -268,13 +268,13 @@ export default function Hero() {
             </p>
 
             <p className="text-lg md:text-2xl mb-6">
-       {      ` To streamline configurations across both the App and Pages
+       To streamline configurations across both the App and Pages
               routers, a new option named{" "}
-              <code>bundlePagesRouterDependencies</code> was introduced. This
-              setting will align with the App Router’s default behavior of
+              <code>bundlePagesRouterDependencies</code>{ `was introduced. This
+              setting will align with the App Router’s `}default behavior of
               automatically bundling external libraries. The{" "}
               <code>serverExternalPackages</code> option remains available to
-              exclude specific libraries as needed.`}
+              exclude specific libraries as needed.
             </p>
           </div>
 
@@ -464,126 +464,128 @@ export default function Hero() {
             ))}{" "}
             <br />
             <br />
-            <h2 className="text-center text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
-              Next.js Version Release Table
-            </h2>
-            <table className="min-w-full bg-white border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="border px-4 py-2">Version</th>
-                  <th className="border px-4 py-2">Release Date</th>
-                  <th className="border px-4 py-2">Key Features</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 1</td>
-                  <td className="border px-4 py-2">October 2016</td>
-                  <td className="border px-4 py-2">
-                    Initial release, server-side rendering (SSR) support
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 2</td>
-                  <td className="border px-4 py-2">March 2017</td>
-                  <td className="border px-4 py-2">
-                    Static export support, automatic code splitting
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 3</td>
-                  <td className="border px-4 py-2">June 2017</td>
-                  <td className="border px-4 py-2">
-                    Dynamic imports, customizable routing
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 4</td>
-                  <td className="border px-4 py-2">October 2017</td>
-                  <td className="border px-4 py-2">
-                    React 16 support, improved error handling
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 5</td>
-                  <td className="border px-4 py-2">February 2018</td>
-                  <td className="border px-4 py-2">
-                    Webpack 4, multi-zones support
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 6</td>
-                  <td className="border px-4 py-2">June 2018</td>
-                  <td className="border px-4 py-2">
-                    Improved `next/link`, custom `App` component
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 7</td>
-                  <td className="border px-4 py-2">October 2018</td>
-                  <td className="border px-4 py-2">
-                    Built-in CSS support, AMP support
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 8</td>
-                  <td className="border px-4 py-2">February 2019</td>
-                  <td className="border px-4 py-2">
-                    Serverless deployment, API routes
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 9</td>
-                  <td className="border px-4 py-2">July 2019</td>
-                  <td className="border px-4 py-2">
-                    API routes, automatic static optimization
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 10</td>
-                  <td className="border px-4 py-2">October 2020</td>
-                  <td className="border px-4 py-2">
-                    Image component, internationalized routing
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 11</td>
-                  <td className="border px-4 py-2">June 2021</td>
-                  <td className="border px-4 py-2">
-                    Conformance, Script component, faster refresh
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 12</td>
-                  <td className="border px-4 py-2">October 2021</td>
-                  <td className="border px-4 py-2">
-                    Middleware, React 18 support, Rust compiler
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 13</td>
-                  <td className="border px-4 py-2">October 2022</td>
-                  <td className="border px-4 py-2">
-                    App Router, React Server Components, improved image
-                    optimization
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 14</td>
-                  <td className="border px-4 py-2">March 2023</td>
-                  <td className="border px-4 py-2">
-                    Improved TypeScript support, new plugins system
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Next.js 15</td>
-                  <td className="border px-4 py-2">October 2023</td>
-                  <td className="border px-4 py-2">
-                    Enhanced image optimization, dynamic imports, new App Router
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto">
+  <h2 className="text-center text-2xl md:text-3xl font-semibold mb-4 text-gray-900">
+    Next.js Version Release Table
+  </h2>
+  <table className="w-full bg-white border border-gray-300">
+    <thead>
+      <tr>
+        <th className="border px-2 md:px-4 py-2">Version</th>
+        <th className="border px-2 md:px-4 py-2">Release Date</th>
+        <th className="border px-2 md:px-4 py-2">Key Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 1</td>
+        <td className="border px-2 md:px-4 py-2">October 2016</td>
+        <td className="border px-2 md:px-4 py-2">
+          Initial release, server-side rendering (SSR) support
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 2</td>
+        <td className="border px-2 md:px-4 py-2">March 2017</td>
+        <td className="border px-2 md:px-4 py-2">
+          Static export support, automatic code splitting
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 3</td>
+        <td className="border px-2 md:px-4 py-2">June 2017</td>
+        <td className="border px-2 md:px-4 py-2">
+          Dynamic imports, customizable routing
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 4</td>
+        <td className="border px-2 md:px-4 py-2">October 2017</td>
+        <td className="border px-2 md:px-4 py-2">
+          React 16 support, improved error handling
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 5</td>
+        <td className="border px-2 md:px-4 py-2">February 2018</td>
+        <td className="border px-2 md:px-4 py-2">
+          Webpack 4, multi-zones support
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 6</td>
+        <td className="border px-2 md:px-4 py-2">June 2018</td>
+        <td className="border px-2 md:px-4 py-2">
+          Improved `next/link`, custom `App` component
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 7</td>
+        <td className="border px-2 md:px-4 py-2">October 2018</td>
+        <td className="border px-2 md:px-4 py-2">
+          Built-in CSS support, AMP support
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 8</td>
+        <td className="border px-2 md:px-4 py-2">February 2019</td>
+        <td className="border px-2 md:px-4 py-2">
+          Serverless deployment, API routes
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 9</td>
+        <td className="border px-2 md:px-4 py-2">July 2019</td>
+        <td className="border px-2 md:px-4 py-2">
+          API routes, automatic static optimization
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 10</td>
+        <td className="border px-2 md:px-4 py-2">October 2020</td>
+        <td className="border px-2 md:px-4 py-2">
+          Image component, internationalized routing
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 11</td>
+        <td className="border px-2 md:px-4 py-2">June 2021</td>
+        <td className="border px-2 md:px-4 py-2">
+          Conformance, Script component, faster refresh
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 12</td>
+        <td className="border px-2 md:px-4 py-2">October 2021</td>
+        <td className="border px-2 md:px-4 py-2">
+          Middleware, React 18 support, Rust compiler
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 13</td>
+        <td className="border px-2 md:px-4 py-2">October 2022</td>
+        <td className="border px-2 md:px-4 py-2">
+          App Router, React Server Components, improved image optimization
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 14</td>
+        <td className="border px-2 md:px-4 py-2">March 2023</td>
+        <td className="border px-2 md:px-4 py-2">
+          Improved TypeScript support, new plugins system
+        </td>
+      </tr>
+      <tr>
+        <td className="border px-2 md:px-4 py-2">Next.js 15</td>
+        <td className="border px-2 md:px-4 py-2">October 2023</td>
+        <td className="border px-2 md:px-4 py-2">
+          Enhanced image optimization, dynamic imports, new App Router
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
           </div>
         </div>
       </div>

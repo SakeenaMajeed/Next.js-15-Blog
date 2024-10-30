@@ -15,11 +15,33 @@ export default function Navbar() {
           />
           <span className="ml-3 text-xl font-bold">Next.js 15</span>
         </Link>
-        <nav className="hidden md:flex space-x-6">
+
+        {/* Nav Links */}
+        <nav className="hidden md:flex space-x-6 md:space-x-8">
+          <Link href="https://nextjs.org/blog/next-15">
+            <button className="relative inline-flex items-center py-2 px-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-full transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-300 hover:shadow-lg transform hover:scale-105 sparkle-button">
+              Documentation
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                className="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </Link>
           {/* Add additional nav items here */}
         </nav>
+      </div>
+
+      {/* Mobile Nav Links */}
+      <div className="md:hidden flex flex-col p-5 space-y-2">
         <Link href="https://nextjs.org/blog/next-15">
-          <button className="relative inline-flex items-center py-2 px-4 text-base font-medium text-white bg-gray-900 border border-transparent rounded-full transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-gray-600 hover:to-gray-300 hover:shadow-lg transform hover:scale-105 sparkle-button">
+          <button className="relative inline-flex items-center py-2 px-4 text-base font-medium text-gray-900 border border-gray-900 rounded-full transition duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg transform hover:scale-105 sparkle-button">
             Documentation
             <svg
               fill="none"
@@ -34,6 +56,7 @@ export default function Navbar() {
             </svg>
           </button>
         </Link>
+        {/* Add more mobile links as needed */}
       </div>
 
       <style jsx>{`
